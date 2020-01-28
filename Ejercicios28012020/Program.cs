@@ -1,4 +1,5 @@
 ﻿using System;
+using Ejercicios28012020.Clases;
 
 namespace Ejercicios28012020
 {
@@ -6,7 +7,9 @@ namespace Ejercicios28012020
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var eje02 = new Ejercicio02();
+            Console.WriteLine(eje02.calcularProducto(5,5));
+            Console.ReadKey();
         }
     }
 }
