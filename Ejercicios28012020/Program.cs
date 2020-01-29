@@ -21,6 +21,7 @@ namespace Ejercicios28012020
             var eje02 = new Ejercicio02();
             Console.WriteLine("calcularProducto(5,5) = " + eje02.calcularProducto(5,5));
 
+
             Console.WriteLine("\nEjercicio 03:");
             var eje03 = new Ejercicio03();
             Console.Write("obtenerMultiplos3(10) = ");
@@ -28,6 +29,21 @@ namespace Ejercicios28012020
             {
                 Console.Write(multiplo + " ");
             }
+
+
+            Console.WriteLine("\n\nEjercicio 04:");
+            var eje04 = new Ejercicio04();
+            int apuesta;
+            do
+            {
+                Console.Write("Ingrese apuesta: ");
+                apuesta = Convert.ToInt32(Console.ReadLine());
+                eje04.agregarApuesta(apuesta);
+            } while (apuesta >= 0 && apuesta < 37);
+            
+            eje04.girarRuleta();
+            Console.WriteLine("\nCantidad Ganadores = " + eje04.obtenerCantidadGanadores());
+            Console.WriteLine("Cantidad Perdedores = " + eje04.obtenerCantidadPerdedores());
 
             Console.ReadKey();
         }

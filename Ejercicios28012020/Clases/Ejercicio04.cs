@@ -17,5 +17,38 @@ namespace Ejercicios28012020.Clases
     */
     class Ejercicio04
     {
+        private List<int> _apuestas;
+        private int _ganador;
+
+        public Ejercicio04()
+        {
+            _apuestas = new List<int>();
+            _ganador = 37;
+        }
+
+        public void agregarApuesta(int apuesta)
+        {
+            if (apuesta >= 0 && apuesta < 37) _apuestas.Add(apuesta);
+        }
+
+        public void girarRuleta()
+        {
+            var random = new Random();
+            _ganador = random.Next(0, 36);
+        }
+
+        public int obtenerCantidadGanadores()
+        {
+            var cantidadGanadores = 0;
+            foreach (var apuesta in _apuestas)
+            {
+                if (apuesta == _ganador) cantidadGanadores++;
+            }
+            return cantidadGanadores;
+        }
+        public int obtenerCantidadPerdedores()
+        {
+            return _apuestas.Count - obtenerCantidadGanadores();
+        }
     }
 }
