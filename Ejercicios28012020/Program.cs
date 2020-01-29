@@ -42,7 +42,8 @@ namespace Ejercicios28012020
             } while (apuesta >= 0 && apuesta < 37);
             
             eje04.girarRuleta();
-            Console.WriteLine("\nCantidad Ganadores = " + eje04.obtenerCantidadGanadores());
+            Console.WriteLine("\nNumero ganador = " + eje04.Ganador);
+            Console.WriteLine("Cantidad Ganadores = " + eje04.obtenerCantidadGanadores());
             Console.WriteLine("Cantidad Perdedores = " + eje04.obtenerCantidadPerdedores());
 
             Console.ReadKey();

@@ -26,6 +26,14 @@ namespace Ejercicios28012020.Clases
             _ganador = 37;
         }
 
+        public int Ganador
+        {
+            get
+            {
+                return _ganador;
+            }
+        }
+
         public void agregarApuesta(int apuesta)
         {
             if (apuesta >= 0 && apuesta < 37) _apuestas.Add(apuesta);
