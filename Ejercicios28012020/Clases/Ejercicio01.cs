@@ -12,6 +12,28 @@ namespace Ejercicios28012020.Clases
     */
     class Ejercicio01
     {
+        public DateTime Fecha1
+        {
+            get;
+            set;
+        }
+        public  DateTime Fecha2
+        {
+            get;
+            set;
+        }
 
+        public string obtenerFechaFormateada(DateTime fecha)
+        {
+            return fecha.ToString("dddd, d 'de' MMMM 'de' yyyy");
+        }
+        public int obtenerDiferenciaEnDias()
+        {
+            return ((TimeSpan)(Fecha2 - Fecha1)).Days;
+        }
+        public int obtenerDiferenciaEnSemanas()
+        {
+            return obtenerDiferenciaEnDias() / 7;
+        }
     }
 }
