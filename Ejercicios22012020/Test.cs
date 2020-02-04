@@ -3,7 +3,7 @@ using Soluciones.Clases;
 
 namespace Soluciones
 {
-    class Program
+    class Test
     {
         static void Main(string[] args)
         {

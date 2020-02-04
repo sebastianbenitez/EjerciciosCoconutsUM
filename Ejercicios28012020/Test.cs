@@ -3,7 +3,7 @@ using Ejercicios28012020.Clases;
 
 namespace Ejercicios28012020
 {
-    class Program
+    class Test
     {
         static void Main(string[] args)
         {
@@ -37,7 +37,15 @@ namespace Ejercicios28012020
             do
             {
                 Console.Write("Ingrese apuesta: ");
-                apuesta = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    apuesta = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+
+                    break;
+                }
                 eje04.agregarApuesta(apuesta);
             } while (apuesta >= 0 && apuesta < 37);
             
