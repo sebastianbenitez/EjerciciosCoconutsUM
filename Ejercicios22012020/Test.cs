@@ -7,6 +7,7 @@ namespace Soluciones
     {
         static void Main(string[] args)
         {
+            //Test Factorial
             var factorial = new Factorial();
             Console.WriteLine(factorial.calcularFactorial(5));
             Console.WriteLine(factorial.calcularFactorialRecursiva(5));

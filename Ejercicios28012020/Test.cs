@@ -7,6 +7,7 @@ namespace Ejercicios28012020
     {
         static void Main(string[] args)
         {
+            // Test Ejercicio 01
             Console.WriteLine("Ejercicio 01:");
             var eje01 = new Ejercicio01();
             eje01.Fecha1 = new DateTime(2020, 01, 01);
@@ -17,11 +18,13 @@ namespace Ejercicios28012020
             Console.WriteLine("Diferencia en semanas = " + eje01.obtenerDiferenciaEnSemanas());
 
 
+            // Test Ejercicio 02
             Console.WriteLine("\nEjercicio 02:");
             var eje02 = new Ejercicio02();
             Console.WriteLine("calcularProducto(5,5) = " + eje02.calcularProducto(5,5));
 
 
+            // Test Ejercicio 03
             Console.WriteLine("\nEjercicio 03:");
             var eje03 = new Ejercicio03();
             Console.Write("obtenerMultiplos3(10) = ");
@@ -31,6 +34,7 @@ namespace Ejercicios28012020
             }
 
 
+            // Test Ejercicio 04
             Console.WriteLine("\n\nEjercicio 04:");
             var eje04 = new Ejercicio04();
             int apuesta;
