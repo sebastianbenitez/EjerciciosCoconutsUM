@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Soluciones.Clases
+namespace Ejercicios22012020.Clases
 {
     public class Factorial
     {
